@@ -61,6 +61,7 @@ selectedCategories)
             }
             var bookToUpdate = await _context.Book
                  .Include(i => i.Publisher)
+                 .Include(i => i.Author)
                  .Include(i => i.BookCategories)
                  .ThenInclude(i => i.Category)
                  .FirstOrDefaultAsync(s => s.Id == id);

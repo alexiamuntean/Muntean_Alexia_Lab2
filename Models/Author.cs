@@ -1,4 +1,6 @@
-﻿namespace Muntean_Alexia_Lab2.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Muntean_Alexia_Lab2.Models
 {
     public class Author
     {
