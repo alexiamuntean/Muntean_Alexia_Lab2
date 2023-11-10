@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Muntean_Alexia_Lab2.Data;
 
@@ -11,9 +12,10 @@ using Muntean_Alexia_Lab2.Data;
 namespace Muntean_Alexia_Lab2.Migrations
 {
     [DbContext(typeof(Muntean_Alexia_Lab2Context))]
-    partial class Muntean_Alexia_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20231109114348_Borrowings")]
+    partial class Borrowings
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
